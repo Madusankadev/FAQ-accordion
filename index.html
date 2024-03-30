@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/main.css">
-  
+
   <title>Frontend Mentor | FAQ accordion</title>
 
 </head>
@@ -21,55 +21,55 @@
         <img src="./assets/images/background-pattern-desktop.svg" alt="Flowers" style="width:auto;">
       </picture>
     </div>
-    <div class="bg bgWhite"></div>
+    <div class="bg bgWhite" id="bgWhite"></div>
 
-    <section class="faqBox">
+    <section class="faqBox" id="faqBox">
       <div class="titleBox">
         <img src="./assets/images/icon-star.svg" alt="star icon" width="5%">
         <h1 class="titleText">FAQs</h1>
       </div>
 
       <ul>
-        <li class="faqRow">
+        <li class="faqRow" onclick="toggleQ('a1');">
           <div class="quesRow">
             <h2 class="faqTitle boldText">What is Frontend Mentor, and how will it help me?</h2>
             <img src="./assets/images/icon-plus.svg" alt="expand Icon" class="faqIcon">
           </div>
-          <p class="qContent ">
+          <p class="qContent " id="a1">
             Frontend Mentor offers realistic coding challenges to help developers improve their 
             frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
             all levels and ideal for portfolio building.
           </p>
         </li>
 
-        <li class="faqRow">
+        <li class="faqRow" onclick="toggleQ('a2');">
           <div class="quesRow">
             <h2 class="faqTitle boldText">Is Frontend Mentor free?</h2>
             <img src="./assets/images/icon-plus.svg" alt="expand Icon" class="faqIcon">
           </div>
-          <p class="qContent hideContent">
+          <p class="qContent hideContent" id="a2">
             Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
             option providing access to a range of projects suitable for all skill levels.
           </p>
         </li>
 
-        <li class="faqRow">
+        <li class="faqRow" onclick="toggleQ('a3');">
           <div class="quesRow">
             <h2 class="faqTitle boldText">Can I use Frontend Mentor projects in my portfolio?</h2>
             <img src="./assets/images/icon-plus.svg" alt="expand Icon" class="faqIcon">
           </div>
-          <p class="qContent hideContent">
+          <p class="qContent hideContent" id="a3">
             Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
             way to showcase your skills to potential employers!
           </p>
         </li>
 
-        <li class="faqRow">
+        <li class="faqRow" onclick="toggleQ('a4');">
           <div class="quesRow">
             <h2 class="faqTitle boldText">How can I get help if I'm stuck on a Frontend Mentor challenge?</h2>
             <img src="./assets/images/icon-plus.svg" alt="expand Icon" class="faqIcon">
           </div>
-          <p class="qContent hideContent">
+          <p class="qContent hideContent" id="a4">
             The best place to get help is inside Frontend Mentor's Discord community. There's a help 
             channel where you can ask questions and seek support from other community members.
           </p>
@@ -77,10 +77,6 @@
       </ul>
     </section>
   </main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">MadusankaDev</a>.
-  </div>
+  <script src="./js/main.js"></script>
 </body>
 </html>
